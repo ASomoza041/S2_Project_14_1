@@ -31,6 +31,17 @@ function setStyles() {
       linkElem.setAttribute("id", "fancySheet");
       linkElem.setAttribute("href", "na_style_" + styleNum + ".css");
       document.head.appendChild(linkElem);
+
+      var figBox = document.createElement("figure");
+      figBox.setAttribute("id", "styleThumbs");
+      document.getElementById("box").appendChild(figBox);
+
+      for (var i = 0; i <= 4; i++) {
+            var prevImag = document.createElement("img");
+            prevImag.setAttribute("src", "na_small_" + i + ".png");
+            prevImag.setAttribute("alt", "na_style_" + i + ".css");
+
+      }
 }
 
 
