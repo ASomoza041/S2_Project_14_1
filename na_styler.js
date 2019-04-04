@@ -37,11 +37,19 @@ function setStyles() {
       document.getElementById("box").appendChild(figBox);
 
       for (var i = 0; i <= 4; i++) {
-            var prevImag = document.createElement("img");
-            prevImag.setAttribute("src", "na_small_" + i + ".png");
-            prevImag.setAttribute("alt", "na_style_" + i + ".css");
+            var sheetImg = document.createElement("img");
+            sheetImg.setAttribute("src", "na_small_" + i + ".png");
+            sheetIag.setAttribute("alt", "na_style_" + i + ".css");
+            sheetImg.onclick = function () {
 
+            }
+            figBox.appendChild(sheetImg);
       }
+      var thumbStyles = document.createElement("style");
+      document.head.appendChild(thumbStyles);
+      document.styleSheets[document.styleSheets.length - 1].insertRule(
+            figure# styleThum
+      )
 }
 
 
